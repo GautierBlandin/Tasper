@@ -1,6 +1,8 @@
 import React from 'react';
-import {Task} from "./project.inteface";
-import {Table, TableBody, TableCell, TableHead, TableRow, Typography} from "@mui/material";
+import {Task} from "../project.inteface";
+import {Button, IconButton, Table, TableBody, TableCell, TableHead, TableRow, Typography} from "@mui/material";
+import AddIcon from '@mui/icons-material/Add';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 export interface TasksProps {
     tasks: Task[];
@@ -13,19 +15,22 @@ function Tasks({tasks}: TasksProps){
         <TableHead>
             <TableRow>
                 <TableCell>
-                    <Typography>
-                        Name
+                    <Typography fontSize={'size.medium'} fontWeight={700}>
+                        TASK
                     </Typography>
                 </TableCell>
                 <TableCell>
-                    <Typography align={'center'}>
-                        Workload
+                    <Typography align={'center'} fontSize={'size.medium'} fontWeight={700}>
+                        WORKLOAD
                     </Typography>
                 </TableCell>
                 <TableCell>
-                    <Typography align={'center'}>
-                        Deadline
+                    <Typography align={'center'} fontSize={'size.medium'} fontWeight={700}>
+                        DEADLINE
                     </Typography>
+                </TableCell>
+                <TableCell align={'center'}>
+                    <Button variant={'contained'} color={'success'} startIcon={<AddIcon/>}>Add Task</Button>
                 </TableCell>
             </TableRow>
         </TableHead>
@@ -47,6 +52,9 @@ function Tasks({tasks}: TasksProps){
                         <Typography align={'center'}>
                             {task.deadline}
                         </Typography>
+                    </TableCell>
+                    <TableCell align = {'center'}>
+                        <IconButton color={'error'}><DeleteIcon/></IconButton>
                     </TableCell>
                 </TableRow>
             )}

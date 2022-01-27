@@ -3,18 +3,11 @@ import {
     Box,
     Button,
     Divider,
-    Table,
-    TableBody,
-    TableCell,
-    TableContainer,
-    TableHead,
-    TableRow,
     Typography
 } from "@mui/material";
 import Sidebar from "../src/components/Sidebar";
-import ProjectRow from "../src/components/Project/ProjectRow";
 import AddIcon from '@mui/icons-material/Add';
-import {projects} from "../mock-data/projects";
+import ProjectsComponent from "../src/components/Projects/ProjectsComponent";
 
 export interface ProjectsProps {
 }
@@ -55,37 +48,8 @@ function Projects({}: ProjectsProps){
                     <Typography color={'text.primary'}>Minimum Workload per day : 7</Typography>
                 </Box>
                 <Divider/>
-                <Box>
-                    <TableContainer>
-                        <Table>
-                            <TableHead>
-                                <TableRow>
-                                    <TableCell>
-                                        <Typography sx={{textTransform: 'uppercase'}}>
-                                            Project
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Typography align={'center'} sx={{textTransform: 'uppercase'}}>
-                                            Workload
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Typography align={'center'} sx={{textTransform: 'uppercase'}}>
-                                            Next Deadline
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell/>
-                                </TableRow>
-                            </TableHead>
-                            <TableBody>
-                                {projects.map((project, i) => <ProjectRow project={project} key={i}/>)}
-                            </TableBody>
-                        </Table>
-                    </TableContainer>
-                </Box>
+                <ProjectsComponent/>
             </Box>
-
         </Box>
     )
 }

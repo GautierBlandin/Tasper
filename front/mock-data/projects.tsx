@@ -1,4 +1,4 @@
-import {Project} from "../src/components/Project/project.inteface";
+import {Project} from "../src/components/Projects/project.inteface";
 
 export const projects: Project[] = [
     {

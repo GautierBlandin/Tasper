@@ -1,9 +1,10 @@
 import React from 'react';
 import {Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography} from "@mui/material";
 import Sidebar from "../src/components/Sidebar";
-import ProjectRow from "../src/components/Project/ProjectRow";
+import QueueComponent from "../src/components/Queue/QueueComponent"
+import ProjectRow from "../src/components/Projects/Project/ProjectRow";
 import {projects} from "../mock-data/projects";
-
+import ProjectsComponent from "../src/components/Projects/ProjectsComponent";
 export interface QueueProps {
 }
 
@@ -17,23 +18,8 @@ function Queue({}: QueueProps){
             {/*The sidebar drawer*/}
             <Sidebar/>
             {/*The queue container component*/}
-            <Box sx = {{
-                minWidth: '250px',
-                backgroundColor: 'rgba(9, 26, 178, 0.7)',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '10px',
-                padding:'10px',
-            }}>
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(i => <Box
-                    key = {i}
-                    sx = {{
-                        backgroundColor: 'white',
-                        height: '40px',
-                        borderRadius: '15px'
-                    }}
-                />)}
-            </Box>
+            <QueueComponent/>
+            {/*The main body containing the projects*/}
             <Box sx = {{
                 flexGrow: 1,
             }}>
@@ -46,35 +32,7 @@ function Queue({}: QueueProps){
                     <Typography color={'text.primary'}>Total Workload : 63</Typography>
                     <Typography color={'text.primary'}>Minimum Workload per day : 7</Typography>
                 </Box>
-                <Box>
-                    <TableContainer>
-                        <Table>
-                            <TableHead>
-                                <TableRow>
-                                    <TableCell>
-                                        <Typography sx={{textTransform: 'uppercase'}}>
-                                            Project
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Typography align={'center'} sx={{textTransform: 'uppercase'}}>
-                                            Workload
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Typography align={'center'} sx={{textTransform: 'uppercase'}}>
-                                            Deadline
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell/>
-                                </TableRow>
-                            </TableHead>
-                            <TableBody>
-                                {projects.map((project, i) => <ProjectRow project={project} key={i}/>)}
-                            </TableBody>
-                        </Table>
-                    </TableContainer>
-                </Box>
+                <ProjectsComponent/>
             </Box>
 
         </Box>

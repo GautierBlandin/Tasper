@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Box, Collapse, Divider, IconButton, TableCell, TableRow, Typography} from "@mui/material";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import {Project} from "./project.inteface";
+import {Project} from "../project.inteface";
 import Tasks from "./Tasks";
 
 export interface ProjectRowProps {
