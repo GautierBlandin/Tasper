@@ -5,7 +5,8 @@ import {createTheme, ThemeProvider} from "@mui/material";
 const customThemeOptions = {
   palette: {
     text: {
-      light: 'white'
+      light: 'white',
+      important: 'black',
     }
   },
   typography: {

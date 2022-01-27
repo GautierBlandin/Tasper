@@ -1,5 +1,7 @@
 import React from 'react';
-import {Box, Typography} from "@mui/material";
+import {Box, Button, Typography} from "@mui/material";
+import {queueItems} from "../../../mock-data/queue-items";
+import QueueItem from "./QueueItem";
 
 export interface QueueComponentProps {
 }
@@ -7,18 +9,33 @@ export interface QueueComponentProps {
 function QueueComponent({}: QueueComponentProps){
     return(
         <Box sx = {{
-            minWidth: '250px',
-            backgroundColor: 'rgba(9, 26, 178, 0.7)',
+            minWidth: '500px',
             display: 'flex',
             flexDirection: 'column',
-            gap: 1,
+            gap: 2,
             padding: 1,
+            borderRight: 'solid 1px rgb(200, 200, 200)'
         }}>
-            <Typography color={'text.light'} fontWeight={900} align={'center'} fontSize={'size.large'}
-            sx={{marginTop: 1}}
+            <Box
+                sx={{
+                    display: "flex",
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    padding: 1,
+            }}
             >
-                DAILY QUEUE
-            </Typography>
+                <Typography color={'text.important'} fontWeight={900} fontSize={'size.xl'}>
+                    DAILY QUEUE
+                </Typography>
+                <Button variant={'contained'} color="primary">
+                    Generate my Queue
+                </Button>
+            </Box>
+            {
+                queueItems.map((item, index) => <QueueItem key={index} name={item!.name}
+                                                           projectColor={item!.projectColor} plannedWorkload={item!.plannedWorkload}
+                />)
+            }
         </Box>
     )
 }

@@ -4,6 +4,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import {Project} from "../project.inteface";
 import Tasks from "./Tasks";
+import Circle from "../../Circle";
 
 export interface ProjectRowProps {
     project: Project
@@ -28,12 +29,7 @@ function ProjectRow({project}: ProjectRowProps){
                     alignItems: 'center'
                 }}>
                     {/* Dot before project name*/}
-                    <Box sx={{
-                        backgroundColor:project.color,
-                        width: '20px',
-                        height: '20px',
-                        borderRadius: '40px',
-                    }}/>
+                    <Circle size={15} color={project.color}/>
                     <Typography sx={{color: project.color}}>
                         {project.name}
                     </Typography>

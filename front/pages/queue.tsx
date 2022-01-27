@@ -1,5 +1,15 @@
 import React from 'react';
-import {Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography} from "@mui/material";
+import {
+    Box,
+    Divider,
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TableHead,
+    TableRow,
+    Typography
+} from "@mui/material";
 import Sidebar from "../src/components/Sidebar";
 import QueueComponent from "../src/components/Queue/QueueComponent"
 import ProjectRow from "../src/components/Projects/Project/ProjectRow";
@@ -32,6 +42,7 @@ function Queue({}: QueueProps){
                     <Typography color={'text.primary'}>Total Workload : 63</Typography>
                     <Typography color={'text.primary'}>Minimum Workload per day : 7</Typography>
                 </Box>
+                <Divider/>
                 <ProjectsComponent/>
             </Box>
 
