@@ -14,7 +14,11 @@ function QueueItem({projectColor, name, plannedWorkload}: QueueItemProps){
         borderRadius: 6,
         padding: 2,
         display: 'flex',
-        border: 'solid 1px rgb(240, 240, 240)'
+        border: 'solid 1px rgb(240, 240, 240)',
+        '&:hover': {
+            backgroundColor: 'rgb(240, 240, 240)',
+            cursor: 'pointer'
+        }
     }}>
         <Box sx={{
             flexGrow: 1,
