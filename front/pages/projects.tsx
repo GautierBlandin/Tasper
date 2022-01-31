@@ -5,7 +5,7 @@ import {
     Divider,
     Typography
 } from "@mui/material";
-import Sidebar from "../src/components/Sidebar";
+import Sidebar from "../src/components/Sidebar/Sidebar";
 import AddIcon from '@mui/icons-material/Add';
 import ProjectsComponent from "../src/components/Projects/ProjectsComponent";
 

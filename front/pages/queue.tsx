@@ -10,7 +10,7 @@ import {
     TableRow,
     Typography
 } from "@mui/material";
-import Sidebar from "../src/components/Sidebar";
+import Sidebar from "../src/components/Sidebar/Sidebar";
 import QueueComponent from "../src/components/Queue/QueueComponent"
 import ProjectRow from "../src/components/Projects/Project/ProjectRow";
 import {projects} from "../mock-data/projects";

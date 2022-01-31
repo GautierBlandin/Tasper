@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0626dc11-10a4-4cde-8bc5-2e393028b984" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/front/mock-data/projects.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/_middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/projects.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/queue.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/components/Project/Tasks.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/components/Project/project.inteface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/components/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.idea/tasper.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/_document.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/components/Sidebar/SidebarButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/ProjectRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Project/ProjectRow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/Typography.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pages/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pages/queue.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/queue.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +56,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front/src/components/Sidebar" />
+      <recent name="$PROJECT_DIR$/front/src/components/Projects" />
       <recent name="$PROJECT_DIR$/front/src/components/Project" />
     </key>
   </component>
@@ -79,7 +69,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643218681119</updated>
-      <workItem from="1643218685618" duration="6600000" />
+      <workItem from="1643218685618" duration="9080000" />
+      <workItem from="1643293486134" duration="8689000" />
+      <workItem from="1643566609168" duration="972000" />
+      <workItem from="1643657143928" duration="993000" />
     </task>
     <servers />
   </component>
